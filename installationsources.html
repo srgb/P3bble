@@ -1,1 +1,70 @@
-hello world
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Installation Sources</title>
+    <style type="text/css">
+        body {
+            font-family: 'Segoe UI', Verdana;
+        }
+        h1 {
+            font-family: 'Segoe WP', Verdana;
+            font-weight:900;
+        }
+        .dark {
+            background-color: black;
+            color: white;
+        }
+        .light {
+            background-color: white;
+            color: black;
+        }
+
+        .dark a {
+            color: white;
+        }
+
+        .light a {
+            color: black;
+        }
+
+    </style>
+</head>
+<body id="body">
+    <h1>APPS</h1>
+    <p>
+        <a href="http://www.mypebblefaces.com/">My Pebble Faces</a>
+    </p>
+    <p>
+        <a href="http://www.watchface-generator.de">Watchface Generator</a>
+    </p>
+    <p>
+        <a href="http://pebblebarn.com" class="dark">PebbleBarn</a>
+    </p>
+
+    <h1>FIRMWARE</h1>
+    <p>
+        <a href="http://pebblebits.com/">PebbleBits</a>
+    </p>
+    <script type="text/ecmascript">
+        var bg = 'white';
+        var fg = 'black';
+        var className = 'light';
+
+        if (window.location.hash == '#dark') {
+            bg = 'black';
+            fg = 'white';
+            className = 'dark'
+        }
+
+        var links = document.getElementsByTagName('a');
+        for (var i=0;i<links.length;i++) {
+            var elem = links[i];
+            elem.classList.add(className);
+        }
+
+        document.bgColor = bg;
+        document.fgColor = fg;
+    </script>
+</body>
+</html>
