@@ -1,0 +1,22 @@
+{
+    "appsources": [
+        {
+            "uri": "http://www.mypebblefaces.com/",
+            "name": "My Pebble Faces"
+        },
+        {
+            "uri": "http://www.watchface-generator.de",
+            "name": "Watchface Generator"
+        },
+        {
+            "uri": "http://pebblebarn.com",
+            "name": "PebbleBarn"
+        }
+    ],
+    "firmwaresources": [
+        {
+            "uri": "http://pebblebits.com/",
+            "name": "PebbleBits"
+        }
+    ]
+}
