@@ -2,27 +2,31 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>Installation Sources</title>
     <style type="text/css">
         body {
             font-family: 'Segoe UI', Verdana;
         }
+
         h1 {
             font-family: 'Segoe WP', Verdana;
-            font-weight:900;
+            font-weight: 900;
         }
+
         .dark {
             background-color: black;
             color: white;
         }
+
         .light {
             background-color: white;
             color: black;
         }
 
         a {
-            font-size:x-large;
-            margin-bottom:18px;
+            font-size: x-large;
+            margin-bottom: 18px;
         }
 
         .dark a {
@@ -32,10 +36,9 @@
         .light a {
             color: black;
         }
-
     </style>
 </head>
-<body id="body"  style="overflow:hidden">
+<body id="body" style="overflow: hidden" onselectstart='return false;'>
     <h1>APPS</h1>
     <p>
         <a href="http://www.mypebblefaces.com/">My Pebble Faces</a>
@@ -63,7 +66,7 @@
         }
 
         var links = document.getElementsByTagName('a');
-        for (var i=0;i<links.length;i++) {
+        for (var i = 0; i < links.length; i++) {
             var elem = links[i];
             elem.classList.add(className);
         }
